@@ -12,7 +12,6 @@ public class Adventura {
      * @param args parametry příkazového řádku
      */
     public static void main(String[] args) {
-
         IHra hra = new Hra();
         TextoveRozhrani ui = new TextoveRozhrani(hra);
         ui.hraj();
