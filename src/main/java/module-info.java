@@ -1,4 +1,4 @@
-module cz.vse.xvalm00.adventuracv {
+module cz.vse.dudt05.adventuracv {
     requires javafx.controls;
     requires javafx.fxml;
 
