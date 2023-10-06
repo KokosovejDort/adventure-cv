@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a4328ee-620f-4b1a-a0bd-6300e7c1ea58" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/019f4e41f0e3f4d89c436379cce0a3b72d75664e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a321e3192536ee7a3f8e54cdee5f30371871b2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/56ded59c72032d764c6641cece60edf7d444827f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d324011b21349e62a14498b3f74ce559ef4cd10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a171727f03de0de54ed39b83cebda9489fa285af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f637e8e7652403faba0fd5edc2020e706f0f09a6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fad5cba399bb22dd3d10142817fcd460ef1568b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/1/019f4e41f0e3f4d89c436379cce0a3b72d75664e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/a/4a321e3192536ee7a3f8e54cdee5f30371871b2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/56ded59c72032d764c6641cece60edf7d444827f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/d/7d324011b21349e62a14498b3f74ce559ef4cd10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a171727f03de0de54ed39b83cebda9489fa285af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/6/f637e8e7652403faba0fd5edc2020e706f0f09a6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/a/fad5cba399bb22dd3d10142817fcd460ef1568b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/Batoh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/Batoh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/HerniPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/HerniPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/Hra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/Hra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/IHra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/IHra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/IPrikaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/IPrikaz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/PrikazJdi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/PrikazJdi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/PrikazKonec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/PrikazKonec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/PrikazNapoveda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/PrikazNapoveda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/PrikazObsahBatohu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/PrikazObsahBatohu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/PrikazPoloz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/PrikazPoloz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/PrikazSeber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/PrikazSeber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/Prostor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/Prostor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/SeznamPrikazu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/SeznamPrikazu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/logika/Vec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/Vec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/main/Adventura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/Adventura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/xvalm00/adventuracv/uiText/TextoveRozhrani.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/uiText/TextoveRozhrani.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz/vse/java/xvalm00/adventuracv/HelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz/vse/java/dudt05/adventuracv/HelloWorldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz/vse/java/xvalm00/adventuracv/logika/HraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz/vse/java/dudt05/adventuracv/logika/HraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz/vse/java/xvalm00/adventuracv/logika/ProstorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz/vse/java/dudt05/adventuracv/logika/ProstorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cz/vse/java/xvalm00/adventuracv/logika/SeznamPrikazuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cz/vse/java/dudt05/adventuracv/logika/SeznamPrikazuTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WNeqXzhMhtFAmtXCFDJrXrFWTZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a4328ee-620f-4b1a-a0bd-6300e7c1ea58" name="Changes" comment="" />
+      <created>1696577661650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696577661650</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

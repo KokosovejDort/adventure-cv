@@ -1,8 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â’ÄÂùÿÿÿÿ
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(×´å¦üÿÿÿÿ
-N	java:S106."9Replace this use of System.out or System.err by a logger.(•ñ ¸
-N	java:S1061"9Replace this use of System.out or System.err by a logger.(±¥ôÀ
-S	java:S106;"9Replace this use of System.out or System.err by a logger.(›Äæ÷üÿÿÿÿ
-i
-java:S1128"GRemove this unused import 'cz.vse.java.xvalm00.adventuracv.logika.Hra'.(¢ôîçûÿÿÿÿ8ÆÒÔÈ«1
