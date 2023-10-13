@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a4328ee-620f-4b1a-a0bd-6300e7c1ea58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/AdventuraZaklad.java" afterDir="false" />
+    <list default="true" id="1a4328ee-620f-4b1a-a0bd-6300e7c1ea58" name="Changes" comment="New class AdventuraZaklad for GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/AdventuraZaklad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/AdventuraZaklad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +41,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="AdventuraZaklad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cz.vse.java.dudt05.adventuracv.main.AdventuraZaklad" />
       <module name="dudt05-adventura-cv" />
-      <option name="PROGRAM_PARAMETERS" value="-text" />
+      <option name="PROGRAM_PARAMETERS" value="-gui" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cz.vse.java.dudt05.adventuracv.main.*" />
