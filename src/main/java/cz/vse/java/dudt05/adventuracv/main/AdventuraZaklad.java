@@ -1,5 +1,6 @@
 package cz.vse.java.dudt05.adventuracv.main;
 
+import cz.vse.java.dudt05.adventuracv.gui.HerniPlocha;
 import cz.vse.java.dudt05.adventuracv.logika.Hra;
 import cz.vse.java.dudt05.adventuracv.logika.IHra;
 import cz.vse.java.dudt05.adventuracv.uiText.TextoveRozhrani;
@@ -58,10 +59,13 @@ public class AdventuraZaklad extends Application {
             }
         });
 
+        HerniPlocha gameMap = new HerniPlocha(hra.getHerniPlan());
+        borderPane.setTop(gameMap.getAnchorPane());
+
         Scene scene = new Scene(borderPane);
         userInput.requestFocus();
-
         primaryStage.setScene(scene);
+        primaryStage.setTitle("Adventura");
         primaryStage.show();
     }
 }
