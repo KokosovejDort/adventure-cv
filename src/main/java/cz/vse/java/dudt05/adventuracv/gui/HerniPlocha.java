@@ -22,8 +22,8 @@ public class HerniPlocha {
                 400, 250,false, false);
         imageView = new ImageView(image);
 
-        AnchorPane.setTopAnchor(point, 200.0);
-        AnchorPane.setLeftAnchor(point, 250.0);
+        AnchorPane.setTopAnchor(point, gamePlan.getAktualniProstor().getPosTop());
+        AnchorPane.setLeftAnchor(point, gamePlan.getAktualniProstor().getPosLeft());
         anchorPane.getChildren().addAll(imageView, point);
     }
 
