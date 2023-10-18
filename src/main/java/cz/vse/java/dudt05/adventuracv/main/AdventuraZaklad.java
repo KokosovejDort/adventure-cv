@@ -37,16 +37,8 @@ public class AdventuraZaklad extends Application {
         }
     }
 
-    @Override
-    public void start(Stage primaryStage) {
-        BorderPane borderPane = new BorderPane();
-
-        TextArea textArea = new TextArea();//Area for output
-        borderPane.setCenter(textArea);
-        textArea.setText(hra.vratUvitani());
-        textArea.setEditable(false);
-
-        TextField userInput = new TextField(); //Area for code
+    private TextField getReadyTextField(BorderPane borderPane, TextArea textArea) {
+        TextField userInput = new TextField();
         borderPane.setBottom(userInput);
         userInput.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -58,10 +50,22 @@ public class AdventuraZaklad extends Application {
                 userInput.clear();
             }
         });
+        return userInput;
+    }
+
+    @Override
+    public void start(Stage primaryStage) {
+        BorderPane borderPane = new BorderPane();
 
         HerniPlocha gameMap = new HerniPlocha(hra.getHerniPlan());
         borderPane.setTop(gameMap.getAnchorPane());
 
+        TextArea textArea = new TextArea();
+        borderPane.setCenter(textArea);
+        textArea.setText(hra.vratUvitani());
+        textArea.setEditable(false);
+
+        TextField userInput = getReadyTextField(borderPane, textArea);
         Scene scene = new Scene(borderPane);
         userInput.requestFocus();
         primaryStage.setScene(scene);
