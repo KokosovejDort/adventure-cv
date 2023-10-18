@@ -7,11 +7,14 @@ import cz.vse.java.dudt05.adventuracv.uiText.TextoveRozhrani;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class AdventuraZaklad extends Application {
@@ -37,9 +40,16 @@ public class AdventuraZaklad extends Application {
         }
     }
 
-    private TextField getReadyTextField(BorderPane borderPane, TextArea textArea) {
+    private HBox getReadyTextField(BorderPane borderPane, TextArea textArea) {
         TextField userInput = new TextField();
-        borderPane.setBottom(userInput);
+        Label inputLabel = new Label("Enter command: ");
+
+        HBox inputArea = new HBox();
+        inputArea.setPadding(new Insets(5, 0, 5, 0));
+        inputArea.getChildren().addAll(inputLabel, userInput);
+        inputArea.setAlignment(Pos.CENTER);
+        inputArea.setSpacing(10);
+        borderPane.setBottom(inputArea);
         userInput.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -50,7 +60,7 @@ public class AdventuraZaklad extends Application {
                 userInput.clear();
             }
         });
-        return userInput;
+        return inputArea;
     }
 
     @Override
@@ -65,7 +75,7 @@ public class AdventuraZaklad extends Application {
         textArea.setText(hra.vratUvitani());
         textArea.setEditable(false);
 
-        TextField userInput = getReadyTextField(borderPane, textArea);
+        HBox userInput = getReadyTextField(borderPane, textArea);
         Scene scene = new Scene(borderPane);
         userInput.requestFocus();
         primaryStage.setScene(scene);
