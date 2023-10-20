@@ -1,6 +1,7 @@
 package cz.vse.java.dudt05.adventuracv.main;
 
 import cz.vse.java.dudt05.adventuracv.gui.HerniPlocha;
+import cz.vse.java.dudt05.adventuracv.gui.PanelVychodu;
 import cz.vse.java.dudt05.adventuracv.logika.Hra;
 import cz.vse.java.dudt05.adventuracv.logika.IHra;
 import cz.vse.java.dudt05.adventuracv.uiText.TextoveRozhrani;
@@ -11,6 +12,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
@@ -40,7 +42,7 @@ public class AdventuraZaklad extends Application {
         }
     }
 
-    private HBox getReadyTextField(BorderPane borderPane, TextArea textArea) {
+    private HBox getReadyInputField(BorderPane borderPane, TextArea textArea) {
         TextField userInput = new TextField();
         Label inputLabel = new Label("Enter command: ");
 
@@ -63,6 +65,14 @@ public class AdventuraZaklad extends Application {
         return inputArea;
     }
 
+    private TextArea getReadyStartScreen(BorderPane borderPane) {
+        TextArea textArea = new TextArea();
+        borderPane.setCenter(textArea);
+        textArea.setText(hra.vratUvitani());
+        textArea.setEditable(false);
+        return textArea;
+    }
+
     @Override
     public void start(Stage primaryStage) {
         BorderPane borderPane = new BorderPane();
@@ -70,12 +80,14 @@ public class AdventuraZaklad extends Application {
         HerniPlocha gameMap = new HerniPlocha(hra.getHerniPlan());
         borderPane.setTop(gameMap.getAnchorPane());
 
-        TextArea textArea = new TextArea();
-        borderPane.setCenter(textArea);
-        textArea.setText(hra.vratUvitani());
-        textArea.setEditable(false);
+        PanelVychodu panelVychodu = new PanelVychodu(hra.getHerniPlan());
+        ListView<String> listView = panelVychodu.getListView();
+        borderPane.setRight(listView);
 
-        HBox userInput = getReadyTextField(borderPane, textArea);
+        TextArea textArea = getReadyStartScreen(borderPane);
+
+        HBox userInput = getReadyInputField(borderPane, textArea);
+
         Scene scene = new Scene(borderPane);
         userInput.requestFocus();
         primaryStage.setScene(scene);
