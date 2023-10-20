@@ -1,5 +1,11 @@
 package cz.vse.java.dudt05.adventuracv.logika;
 
+import cz.vse.java.dudt05.adventuracv.util.Observer;
+import cz.vse.java.dudt05.adventuracv.util.SubjectOfChange;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *  Class HerniPlan - třída představující mapu a stav adventury.
  * 
@@ -11,10 +17,11 @@ package cz.vse.java.dudt05.adventuracv.logika;
  *@author     Michael Kolling, Lubos Pavlicek, Jarmila Pavlickova, Alena Buchalcevova
  *@version    z kurzu 4IT101 pro školní rok 2014/2015
  */
-public class HerniPlan {
+public class HerniPlan implements SubjectOfChange {
     
     private Prostor aktualniProstor;
     private Prostor viteznyProstor;
+    final private Set<Observer> observers = new HashSet<>();
 
     /**
      *  Konstruktor který vytváří jednotlivé prostory a propojuje je pomocí východů.
@@ -69,6 +76,7 @@ public class HerniPlan {
      */
     public void setAktualniProstor(Prostor prostor) {
         aktualniProstor = prostor;
+        notifyObserver();
     }
     /**
      *  Metoda vrací odkaz na vítězný prostor.
@@ -80,4 +88,21 @@ public class HerniPlan {
         return viteznyProstor;
     }
 
+    @Override
+    public void registerObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void unregisterObserver(Observer observer) {
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notifyObserver() {
+        for (Observer observer : observers) {
+            observer.update();
+            observer.notify();
+        }
+    }
 }

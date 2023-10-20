@@ -1,5 +1,6 @@
 package cz.vse.java.dudt05.adventuracv.main;
 
+import cz.vse.java.dudt05.adventuracv.gui.BagPannel;
 import cz.vse.java.dudt05.adventuracv.gui.HerniPlocha;
 import cz.vse.java.dudt05.adventuracv.gui.PanelVychodu;
 import cz.vse.java.dudt05.adventuracv.logika.Hra;
@@ -42,8 +43,7 @@ public class AdventuraZaklad extends Application {
         }
     }
 
-    private HBox getReadyInputField(BorderPane borderPane, TextArea textArea) {
-        TextField userInput = new TextField();
+    private TextField getReadyInputField(BorderPane borderPane, TextField userInput) {
         Label inputLabel = new Label("Enter command: ");
 
         HBox inputArea = new HBox();
@@ -52,17 +52,8 @@ public class AdventuraZaklad extends Application {
         inputArea.setAlignment(Pos.CENTER);
         inputArea.setSpacing(10);
         borderPane.setBottom(inputArea);
-        userInput.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                String command = userInput.getText();
-                String gameOutput = hra.zpracujPrikaz(command);
-                textArea.appendText("\n"+gameOutput);
 
-                userInput.clear();
-            }
-        });
-        return inputArea;
+        return userInput;
     }
 
     private TextArea getReadyStartScreen(BorderPane borderPane) {
@@ -84,12 +75,23 @@ public class AdventuraZaklad extends Application {
         ListView<String> listView = panelVychodu.getListView();
         borderPane.setRight(listView);
 
+        BagPannel bagPannel = new BagPannel(hra);
+        borderPane.setLeft(bagPannel.getPannel());
+
         TextArea textArea = getReadyStartScreen(borderPane);
 
-        HBox userInput = getReadyInputField(borderPane, textArea);
+        TextField inputField = new TextField();
+        getReadyInputField(borderPane, inputField);
+        inputField.setOnAction(actionEvent -> {
+            String command = inputField.getText();
+            String gameOutput = hra.zpracujPrikaz(command);
+            textArea.appendText("\n"+gameOutput);
+
+            inputField.clear();
+        });
 
         Scene scene = new Scene(borderPane);
-        userInput.requestFocus();
+        inputField.requestFocus();
         primaryStage.setScene(scene);
         primaryStage.setTitle("Adventura");
         primaryStage.show();

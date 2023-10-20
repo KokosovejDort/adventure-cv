@@ -1,5 +1,9 @@
 package cz.vse.java.dudt05.adventuracv.logika;
 
+import cz.vse.java.dudt05.adventuracv.util.Observer;
+import cz.vse.java.dudt05.adventuracv.util.SubjectOfChange;
+
+import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Set;
@@ -12,10 +16,11 @@ import java.util.Set;
  *@version    z kurzu 4IT101 pro školní rok 2014/2015
  */
 
-public class Batoh
+public class Batoh implements SubjectOfChange
 {
 public static final int KAPACITA = 3 ;
 private Map<String, Vec> seznamVeci ;   // seznam věcí v batohu
+    private Set<Observer> observers = new HashSet<>();
 
 
     public Batoh () {
@@ -28,6 +33,7 @@ seznamVeci = new HashMap<String, Vec>();
      */
    public void vlozVec (Vec vec) {
        seznamVeci.put(vec.getJmeno(),vec);
+       notifyObserver();
     }
      /**
      * Vrací řetězec názvů věcí, které jsou v batohu
@@ -54,10 +60,32 @@ seznamVeci = new HashMap<String, Vec>();
             nalezenaVec = seznamVeci.get(jmeno);
             seznamVeci.remove(jmeno);
         }
+        notifyObserver();
         return nalezenaVec;
     }
 
     public Set<String> getMnozinaVeci() {
+        return seznamVeci.keySet();
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+        this.observers.add(observer);
+    }
+
+    @Override
+    public void unregisterObserver(Observer observer) {
+        this.observers.remove(observer);
+    }
+
+    @Override
+    public void notifyObserver() {
+        for (Observer observer : observers) {
+            observer.notify();
+        }
+    }
+
+    public Set<String> itemList() {
         return seznamVeci.keySet();
     }
 }
