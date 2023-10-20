@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a4328ee-620f-4b1a-a0bd-6300e7c1ea58" name="Changes" comment="New class AdventuraZaklad for GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/gui/PanelVychodu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/Hra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/logika/Hra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/Adventura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/Adventura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/AdventuraZaklad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/AdventuraZaklad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,5 +96,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cz/vse/java/dudt05/adventuracv/main/AdventuraZaklad.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

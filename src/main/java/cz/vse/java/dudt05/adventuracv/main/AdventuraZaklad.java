@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 
 public class AdventuraZaklad extends Application {
 
-    private final IHra hra = new Hra();
+    private final IHra hra = Hra.getSingletone();
 
     public static void main(String[] args) {
         if (args.length == 0) {
@@ -29,7 +29,7 @@ public class AdventuraZaklad extends Application {
         }
         else {
             if(args[0].equals("-text")) {
-                IHra hra = new Hra();
+                IHra hra = Hra.getSingletone();
                 TextoveRozhrani ui = new TextoveRozhrani(hra);
                 ui.hraj();
             }

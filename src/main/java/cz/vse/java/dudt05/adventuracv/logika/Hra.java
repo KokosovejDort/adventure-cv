@@ -17,11 +17,16 @@ public class Hra implements IHra {
     private HerniPlan herniPlan;
     private boolean konecHry = false;
     private Batoh batoh ;
+    private static final Hra SINGLETON = new Hra();
+
+    public static Hra getSingletone() {
+        return SINGLETON;
+    }
 
     /**
      *  Vytváří hru a inicializuje místnosti (prostřednictvím třídy HerniPlan) a seznam platných příkazů.
      */
-    public Hra() {
+    private Hra() {
         herniPlan = new HerniPlan();
         batoh = new Batoh();
         platnePrikazy = new SeznamPrikazu();
