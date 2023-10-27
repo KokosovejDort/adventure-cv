@@ -26,7 +26,7 @@ public class Hra implements IHra {
     /**
      *  Vytváří hru a inicializuje místnosti (prostřednictvím třídy HerniPlan) a seznam platných příkazů.
      */
-    private Hra() {
+    Hra() {
         herniPlan = new HerniPlan();
         batoh = new Batoh();
         platnePrikazy = new SeznamPrikazu();

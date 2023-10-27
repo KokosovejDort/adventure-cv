@@ -102,7 +102,7 @@ public class HerniPlan implements SubjectOfChange {
     public void notifyObserver() {
         for (Observer observer : observers) {
             observer.update();
-            observer.notify();
+            //observer.notify();
         }
     }
 }
